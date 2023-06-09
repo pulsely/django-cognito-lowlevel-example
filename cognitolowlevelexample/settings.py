@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cognitolowlevel',
+
+    'landing',                      # Sample landing page for login to AWS Cognito
+    'cognitolowlevel',              # Add the 'cognitolowlevel' app here
 
 ]
 
