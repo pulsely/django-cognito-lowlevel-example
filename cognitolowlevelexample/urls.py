@@ -15,11 +15,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 from cognitolowlevel.views import cognito_callback
 
 urlpatterns = [
+    path('', include('landing.urls')),
 
     path(settings.COGNIT_CALLBACK_URL_PATH, cognito_callback, name="cognito_callback"),
 
