@@ -11,8 +11,8 @@ Here is how to run this test project with Python version 3.9+.
 
 
 ```sh
-git clone https://github.com/pulsely/django-cognito-lowlevel
-cd django-cognito-lowlevel
+git clone https://github.com/pulsely/django-cognito-lowlevel-example
+cd django-cognito-lowlevel-example
 python -m venv venv
 source ./venv/bin/activate
 pip install -r requirements.txt 
