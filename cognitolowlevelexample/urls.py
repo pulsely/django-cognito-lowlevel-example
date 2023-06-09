@@ -22,6 +22,7 @@ from cognitolowlevel.views import cognito_callback
 urlpatterns = [
     path('', include('landing.urls')),
 
+    # Sample implementation of a cognito callback for your custom flow
     path(settings.COGNIT_CALLBACK_URL_PATH, cognito_callback, name="cognito_callback"),
 
     path('admin/', admin.site.urls),
